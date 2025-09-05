@@ -9,4 +9,8 @@ import java.util.List;
 public interface CarPostStoreService {
 
     List<CarPostDTO> getCarForSales();
+
+    void changeCarForSale(CarPostDTO carPost, String id);
+
+    void removeCarForSale(String id);
 }
